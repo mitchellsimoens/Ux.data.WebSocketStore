@@ -10,14 +10,14 @@
             },
             "files": [
                 {
-                    "clsName": "Ext.data.association.Association",
-                    "name": "Association.js",
-                    "path": "resources/extjs-4.1.0/src/data/association/"
-                },
-                {
                     "clsName": "Ext.util.Observable",
                     "name": "Observable.js",
                     "path": "resources/extjs-4.1.0/src/util/"
+                },
+                {
+                    "clsName": "Ext.data.association.Association",
+                    "name": "Association.js",
+                    "path": "resources/extjs-4.1.0/src/data/association/"
                 },
                 {
                     "clsName": "Ext.data.IdGenerator",
@@ -35,14 +35,39 @@
                     "path": "resources/extjs-4.1.0/src/data/"
                 },
                 {
-                    "clsName": "Ext.data.SortTypes",
-                    "name": "SortTypes.js",
-                    "path": "resources/extjs-4.1.0/src/data/"
+                    "clsName": "Ext.util.ElementContainer",
+                    "name": "ElementContainer.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
                 },
                 {
-                    "clsName": "Ext.data.Types",
-                    "name": "Types.js",
-                    "path": "resources/extjs-4.1.0/src/data/"
+                    "clsName": "Ext.form.FieldAncestor",
+                    "name": "FieldAncestor.js",
+                    "path": "resources/extjs-4.1.0/src/form/"
+                },
+                {
+                    "clsName": "Ext.util.ClickRepeater",
+                    "name": "ClickRepeater.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
+                },
+                {
+                    "clsName": "Ext.form.field.VTypes",
+                    "name": "VTypes.js",
+                    "path": "resources/extjs-4.1.0/src/form/field/"
+                },
+                {
+                    "clsName": "Ext.util.TextMetrics",
+                    "name": "TextMetrics.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
+                },
+                {
+                    "clsName": "Ext.util.KeyMap",
+                    "name": "KeyMap.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
+                },
+                {
+                    "clsName": "Ext.fx.CubicBezier",
+                    "name": "CubicBezier.js",
+                    "path": "resources/extjs-4.1.0/src/fx/"
                 },
                 {
                     "clsName": "Ext.util.HashMap",
@@ -55,39 +80,39 @@
                     "path": "resources/extjs-4.1.0/src/util/"
                 },
                 {
-                    "clsName": "Ext.form.FieldAncestor",
-                    "name": "FieldAncestor.js",
-                    "path": "resources/extjs-4.1.0/src/form/"
+                    "clsName": "Ext.ZIndexManager",
+                    "name": "ZIndexManager.js",
+                    "path": "resources/extjs-4.1.0/src/"
                 },
                 {
-                    "clsName": "Ext.form.field.VTypes",
-                    "name": "VTypes.js",
+                    "clsName": "Ext.data.SortTypes",
+                    "name": "SortTypes.js",
+                    "path": "resources/extjs-4.1.0/src/data/"
+                },
+                {
+                    "clsName": "Ext.util.Memento",
+                    "name": "Memento.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
+                },
+                {
+                    "clsName": "Ext.Template",
+                    "name": "Template.js",
+                    "path": "resources/extjs-4.1.0/src/"
+                },
+                {
+                    "clsName": "Ext.form.field.Field",
+                    "name": "Field.js",
                     "path": "resources/extjs-4.1.0/src/form/field/"
                 },
                 {
-                    "clsName": "Ext.util.ClickRepeater",
-                    "name": "ClickRepeater.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
-                },
-                {
-                    "clsName": "Ext.util.KeyMap",
-                    "name": "KeyMap.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
-                },
-                {
-                    "clsName": "Ext.util.TextMetrics",
-                    "name": "TextMetrics.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
-                },
-                {
-                    "clsName": "Ext.util.ElementContainer",
-                    "name": "ElementContainer.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
-                },
-                {
-                    "clsName": "Ext.fx.CubicBezier",
-                    "name": "CubicBezier.js",
+                    "clsName": "Ext.fx.Queue",
+                    "name": "Queue.js",
                     "path": "resources/extjs-4.1.0/src/fx/"
+                },
+                {
+                    "clsName": "Ext.util.Filter",
+                    "name": "Filter.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
                 },
                 {
                     "clsName": "Ext.util.Sorter",
@@ -115,44 +140,14 @@
                     "path": "resources/extjs-4.1.0/src/"
                 },
                 {
-                    "clsName": "Ext.util.Filter",
-                    "name": "Filter.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
-                },
-                {
-                    "clsName": "Ext.util.Memento",
-                    "name": "Memento.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
-                },
-                {
-                    "clsName": "Ext.form.field.Field",
-                    "name": "Field.js",
-                    "path": "resources/extjs-4.1.0/src/form/field/"
-                },
-                {
-                    "clsName": "Ext.ZIndexManager",
-                    "name": "ZIndexManager.js",
-                    "path": "resources/extjs-4.1.0/src/"
-                },
-                {
-                    "clsName": "Ext.Template",
-                    "name": "Template.js",
-                    "path": "resources/extjs-4.1.0/src/"
-                },
-                {
-                    "clsName": "Ext.fx.Queue",
-                    "name": "Queue.js",
-                    "path": "resources/extjs-4.1.0/src/fx/"
+                    "clsName": "Ext.form.action.Action",
+                    "name": "Action.js",
+                    "path": "resources/extjs-4.1.0/src/form/action/"
                 },
                 {
                     "clsName": "Ext.panel.Proxy",
                     "name": "Proxy.js",
                     "path": "resources/extjs-4.1.0/src/panel/"
-                },
-                {
-                    "clsName": "Ext.form.action.Action",
-                    "name": "Action.js",
-                    "path": "resources/extjs-4.1.0/src/form/action/"
                 },
                 {
                     "clsName": "Ext.data.Connection",
@@ -165,29 +160,19 @@
                     "path": "resources/extjs-4.1.0/src/fx/target/"
                 },
                 {
-                    "clsName": "Ext.XTemplateParser",
-                    "name": "XTemplateParser.js",
-                    "path": "resources/extjs-4.1.0/src/"
-                },
-                {
                     "clsName": "Ext.draw.Color",
                     "name": "Color.js",
                     "path": "resources/extjs-4.1.0/src/draw/"
                 },
                 {
+                    "clsName": "Ext.XTemplateParser",
+                    "name": "XTemplateParser.js",
+                    "path": "resources/extjs-4.1.0/src/"
+                },
+                {
                     "clsName": "Ext.state.Provider",
                     "name": "Provider.js",
                     "path": "resources/extjs-4.1.0/src/state/"
-                },
-                {
-                    "clsName": "Ext.util.Bindable",
-                    "name": "Bindable.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
-                },
-                {
-                    "clsName": "Ext.layout.container.boxOverflow.None",
-                    "name": "None.js",
-                    "path": "resources/extjs-4.1.0/src/layout/container/boxOverflow/"
                 },
                 {
                     "clsName": "Ext.util.Offset",
@@ -200,8 +185,13 @@
                     "path": "resources/extjs-4.1.0/src/dd/"
                 },
                 {
-                    "clsName": "Ext.layout.container.boxOverflow.Scroller",
-                    "name": "Scroller.js",
+                    "clsName": "Ext.util.Bindable",
+                    "name": "Bindable.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
+                },
+                {
+                    "clsName": "Ext.layout.container.boxOverflow.None",
+                    "name": "None.js",
                     "path": "resources/extjs-4.1.0/src/layout/container/boxOverflow/"
                 },
                 {
@@ -215,19 +205,14 @@
                     "path": "resources/extjs-4.1.0/src/app/"
                 },
                 {
-                    "clsName": "Chat.controller.Socketio",
-                    "name": "Socketio.js",
-                    "path": "app/controller/"
-                },
-                {
                     "clsName": "Chat.controller.Main",
                     "name": "Main.js",
                     "path": "app/controller/"
                 },
                 {
-                    "clsName": "Ext.data.Field",
-                    "name": "Field.js",
-                    "path": "resources/extjs-4.1.0/src/data/"
+                    "clsName": "Chat.controller.Socketio",
+                    "name": "Socketio.js",
+                    "path": "app/controller/"
                 },
                 {
                     "clsName": "Ext.AbstractManager",
@@ -245,13 +230,18 @@
                     "path": "resources/extjs-4.1.0/src/"
                 },
                 {
-                    "clsName": "Ext.util.Sortable",
-                    "name": "Sortable.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
+                    "clsName": "Ext.fx.Easing",
+                    "name": "Easing.js",
+                    "path": "resources/extjs-4.1.0/src/fx/"
                 },
                 {
                     "clsName": "Ext.util.AbstractMixedCollection",
                     "name": "AbstractMixedCollection.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
+                },
+                {
+                    "clsName": "Ext.util.Sortable",
+                    "name": "Sortable.js",
                     "path": "resources/extjs-4.1.0/src/util/"
                 },
                 {
@@ -270,19 +260,24 @@
                     "path": "resources/extjs-4.1.0/src/data/"
                 },
                 {
-                    "clsName": "Ext.data.Model",
-                    "name": "Model.js",
-                    "path": "resources/extjs-4.1.0/src/data/"
-                },
-                {
                     "clsName": "Ext.menu.Manager",
                     "name": "Manager.js",
                     "path": "resources/extjs-4.1.0/src/menu/"
                 },
                 {
-                    "clsName": "Ext.fx.Easing",
-                    "name": "Easing.js",
-                    "path": "resources/extjs-4.1.0/src/fx/"
+                    "clsName": "Ext.data.Types",
+                    "name": "Types.js",
+                    "path": "resources/extjs-4.1.0/src/data/"
+                },
+                {
+                    "clsName": "Ext.data.Field",
+                    "name": "Field.js",
+                    "path": "resources/extjs-4.1.0/src/data/"
+                },
+                {
+                    "clsName": "Ext.data.Model",
+                    "name": "Model.js",
+                    "path": "resources/extjs-4.1.0/src/data/"
                 },
                 {
                     "clsName": "Ext.form.action.Load",
@@ -315,14 +310,14 @@
                     "path": "resources/extjs-4.1.0/src/layout/container/"
                 },
                 {
-                    "clsName": "Ext.form.Labelable",
-                    "name": "Labelable.js",
-                    "path": "resources/extjs-4.1.0/src/form/"
-                },
-                {
                     "clsName": "Ext.layout.container.Auto",
                     "name": "Auto.js",
                     "path": "resources/extjs-4.1.0/src/layout/container/"
+                },
+                {
+                    "clsName": "Ext.form.Labelable",
+                    "name": "Labelable.js",
+                    "path": "resources/extjs-4.1.0/src/form/"
                 },
                 {
                     "clsName": "Ext.fx.target.Element",
@@ -345,13 +340,13 @@
                     "path": "resources/extjs-4.1.0/src/fx/target/"
                 },
                 {
-                    "clsName": "Ext.fx.target.Sprite",
-                    "name": "Sprite.js",
+                    "clsName": "Ext.fx.target.Component",
+                    "name": "Component.js",
                     "path": "resources/extjs-4.1.0/src/fx/target/"
                 },
                 {
-                    "clsName": "Ext.fx.target.Component",
-                    "name": "Component.js",
+                    "clsName": "Ext.fx.target.Sprite",
+                    "name": "Sprite.js",
                     "path": "resources/extjs-4.1.0/src/fx/target/"
                 },
                 {
@@ -385,64 +380,9 @@
                     "path": "resources/extjs-4.1.0/src/fx/"
                 },
                 {
-                    "clsName": "Ext.state.Manager",
-                    "name": "Manager.js",
-                    "path": "resources/extjs-4.1.0/src/state/"
-                },
-                {
-                    "clsName": "Ext.state.Stateful",
-                    "name": "Stateful.js",
-                    "path": "resources/extjs-4.1.0/src/state/"
-                },
-                {
-                    "clsName": "Ext.AbstractComponent",
-                    "name": "AbstractComponent.js",
-                    "path": "resources/extjs-4.1.0/src/"
-                },
-                {
-                    "clsName": "Ext.Component",
-                    "name": "Component.js",
-                    "path": "resources/extjs-4.1.0/src/"
-                },
-                {
-                    "clsName": "Ext.app.EventBus",
-                    "name": "EventBus.js",
-                    "path": "resources/extjs-4.1.0/src/app/"
-                },
-                {
-                    "clsName": "Ext.container.AbstractContainer",
-                    "name": "AbstractContainer.js",
-                    "path": "resources/extjs-4.1.0/src/container/"
-                },
-                {
-                    "clsName": "Ext.container.Container",
-                    "name": "Container.js",
-                    "path": "resources/extjs-4.1.0/src/container/"
-                },
-                {
-                    "clsName": "Ext.container.Viewport",
-                    "name": "Viewport.js",
-                    "path": "resources/extjs-4.1.0/src/container/"
-                },
-                {
-                    "clsName": "Ext.resizer.Splitter",
-                    "name": "Splitter.js",
-                    "path": "resources/extjs-4.1.0/src/resizer/"
-                },
-                {
-                    "clsName": "Ext.resizer.BorderSplitter",
-                    "name": "BorderSplitter.js",
-                    "path": "resources/extjs-4.1.0/src/resizer/"
-                },
-                {
-                    "clsName": "Ext.layout.container.Border",
-                    "name": "Border.js",
+                    "clsName": "Ext.layout.container.Anchor",
+                    "name": "Anchor.js",
                     "path": "resources/extjs-4.1.0/src/layout/container/"
-                },
-                {
-                    "clsName": "Ext.panel.Header",
-                    "name": "Header.js",
-                    "path": "resources/extjs-4.1.0/src/panel/"
                 },
                 {
                     "clsName": "Ext.container.DockingContainer",
@@ -470,19 +410,9 @@
                     "path": "resources/extjs-4.1.0/src/layout/component/"
                 },
                 {
-                    "clsName": "Ext.button.Button",
-                    "name": "Button.js",
-                    "path": "resources/extjs-4.1.0/src/button/"
-                },
-                {
                     "clsName": "Ext.layout.component.field.Field",
                     "name": "Field.js",
                     "path": "resources/extjs-4.1.0/src/layout/component/field/"
-                },
-                {
-                    "clsName": "Ext.form.field.Base",
-                    "name": "Base.js",
-                    "path": "resources/extjs-4.1.0/src/form/field/"
                 },
                 {
                     "clsName": "Ext.layout.component.field.Text",
@@ -490,9 +420,79 @@
                     "path": "resources/extjs-4.1.0/src/layout/component/field/"
                 },
                 {
+                    "clsName": "Ext.state.Manager",
+                    "name": "Manager.js",
+                    "path": "resources/extjs-4.1.0/src/state/"
+                },
+                {
+                    "clsName": "Ext.state.Stateful",
+                    "name": "Stateful.js",
+                    "path": "resources/extjs-4.1.0/src/state/"
+                },
+                {
+                    "clsName": "Ext.AbstractComponent",
+                    "name": "AbstractComponent.js",
+                    "path": "resources/extjs-4.1.0/src/"
+                },
+                {
+                    "clsName": "Ext.Component",
+                    "name": "Component.js",
+                    "path": "resources/extjs-4.1.0/src/"
+                },
+                {
+                    "clsName": "Ext.app.EventBus",
+                    "name": "EventBus.js",
+                    "path": "resources/extjs-4.1.0/src/app/"
+                },
+                {
+                    "clsName": "Ext.button.Button",
+                    "name": "Button.js",
+                    "path": "resources/extjs-4.1.0/src/button/"
+                },
+                {
+                    "clsName": "Ext.container.AbstractContainer",
+                    "name": "AbstractContainer.js",
+                    "path": "resources/extjs-4.1.0/src/container/"
+                },
+                {
+                    "clsName": "Ext.container.Container",
+                    "name": "Container.js",
+                    "path": "resources/extjs-4.1.0/src/container/"
+                },
+                {
+                    "clsName": "Ext.container.Viewport",
+                    "name": "Viewport.js",
+                    "path": "resources/extjs-4.1.0/src/container/"
+                },
+                {
+                    "clsName": "Ext.form.field.Base",
+                    "name": "Base.js",
+                    "path": "resources/extjs-4.1.0/src/form/field/"
+                },
+                {
                     "clsName": "Ext.form.field.Text",
                     "name": "Text.js",
                     "path": "resources/extjs-4.1.0/src/form/field/"
+                },
+                {
+                    "clsName": "Ext.resizer.Splitter",
+                    "name": "Splitter.js",
+                    "path": "resources/extjs-4.1.0/src/resizer/"
+                },
+                {
+                    "clsName": "Ext.resizer.BorderSplitter",
+                    "name": "BorderSplitter.js",
+                    "path": "resources/extjs-4.1.0/src/resizer/"
+                },
+                {
+                    "clsName": "Ext.layout.container.Border",
+                    "name": "Border.js",
+                    "path": "resources/extjs-4.1.0/src/layout/container/"
+                },
+                {
+                    "clsName": "Ext.panel.Header",
+                    "name": "Header.js",
+                    "path": "resources/extjs-4.1.0/src/panel/"
                 },
                 {
                     "clsName": "Ext.form.field.Display",
@@ -500,9 +500,14 @@
                     "path": "resources/extjs-4.1.0/src/form/field/"
                 },
                 {
-                    "clsName": "Ext.layout.container.Anchor",
-                    "name": "Anchor.js",
-                    "path": "resources/extjs-4.1.0/src/layout/container/"
+                    "clsName": "Ext.util.ComponentDragger",
+                    "name": "ComponentDragger.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
+                },
+                {
+                    "clsName": "Ext.util.Region",
+                    "name": "Region.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
                 },
                 {
                     "clsName": "Ext.toolbar.Fill",
@@ -515,9 +520,9 @@
                     "path": "resources/extjs-4.1.0/src/dd/"
                 },
                 {
-                    "clsName": "Ext.util.ComponentDragger",
-                    "name": "ComponentDragger.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
+                    "clsName": "Ext.dd.DragDropManager",
+                    "name": "DragDropManager.js",
+                    "path": "resources/extjs-4.1.0/src/dd/"
                 },
                 {
                     "clsName": "Ext.layout.component.field.TextArea",
@@ -530,21 +535,6 @@
                     "path": "resources/extjs-4.1.0/src/form/field/"
                 },
                 {
-                    "clsName": "Ext.util.Region",
-                    "name": "Region.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
-                },
-                {
-                    "clsName": "Ext.dd.DragDropManager",
-                    "name": "DragDropManager.js",
-                    "path": "resources/extjs-4.1.0/src/dd/"
-                },
-                {
-                    "clsName": "Ext.LoadMask",
-                    "name": "LoadMask.js",
-                    "path": "resources/extjs-4.1.0/src/"
-                },
-                {
                     "clsName": "Ext.layout.component.ProgressBar",
                     "name": "ProgressBar.js",
                     "path": "resources/extjs-4.1.0/src/layout/component/"
@@ -553,6 +543,16 @@
                     "clsName": "Ext.ProgressBar",
                     "name": "ProgressBar.js",
                     "path": "resources/extjs-4.1.0/src/"
+                },
+                {
+                    "clsName": "Ext.LoadMask",
+                    "name": "LoadMask.js",
+                    "path": "resources/extjs-4.1.0/src/"
+                },
+                {
+                    "clsName": "Ext.layout.container.boxOverflow.Scroller",
+                    "name": "Scroller.js",
+                    "path": "resources/extjs-4.1.0/src/layout/container/boxOverflow/"
                 },
                 {
                     "clsName": "Ext.dd.DragDrop",
@@ -735,13 +735,18 @@
                     "path": "app/view/"
                 },
                 {
+                    "clsName": "Ext.util.Point",
+                    "name": "Point.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
+                },
+                {
                     "clsName": "Ext.Layer",
                     "name": "Layer.js",
                     "path": "resources/extjs-4.1.0/src/"
                 },
                 {
-                    "clsName": "Ext.util.Point",
-                    "name": "Point.js",
+                    "clsName": "Ext.util.CSS",
+                    "name": "CSS.js",
                     "path": "resources/extjs-4.1.0/src/util/"
                 },
                 {
@@ -760,21 +765,6 @@
                     "path": "resources/extjs-4.1.0/src/resizer/"
                 },
                 {
-                    "clsName": "Ext.panel.Tool",
-                    "name": "Tool.js",
-                    "path": "resources/extjs-4.1.0/src/panel/"
-                },
-                {
-                    "clsName": "Ext.resizer.BorderSplitterTracker",
-                    "name": "BorderSplitterTracker.js",
-                    "path": "resources/extjs-4.1.0/src/resizer/"
-                },
-                {
-                    "clsName": "Ext.util.CSS",
-                    "name": "CSS.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
-                },
-                {
                     "clsName": "Ext.Img",
                     "name": "Img.js",
                     "path": "resources/extjs-4.1.0/src/"
@@ -785,9 +775,9 @@
                     "path": "resources/extjs-4.1.0/src/layout/component/"
                 },
                 {
-                    "clsName": "Ext.view.TableChunker",
-                    "name": "TableChunker.js",
-                    "path": "resources/extjs-4.1.0/src/view/"
+                    "clsName": "Ext.panel.Tool",
+                    "name": "Tool.js",
+                    "path": "resources/extjs-4.1.0/src/panel/"
                 },
                 {
                     "clsName": "Ext.selection.RowModel",
@@ -800,14 +790,9 @@
                     "path": "resources/extjs-4.1.0/src/grid/"
                 },
                 {
-                    "clsName": "Ext.util.Queue",
-                    "name": "Queue.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
-                },
-                {
-                    "clsName": "Ext.layout.container.Fit",
-                    "name": "Fit.js",
-                    "path": "resources/extjs-4.1.0/src/layout/container/"
+                    "clsName": "Ext.view.TableChunker",
+                    "name": "TableChunker.js",
+                    "path": "resources/extjs-4.1.0/src/view/"
                 },
                 {
                     "clsName": "Ext.menu.Item",
@@ -815,14 +800,9 @@
                     "path": "resources/extjs-4.1.0/src/menu/"
                 },
                 {
-                    "clsName": "Ext.menu.Separator",
-                    "name": "Separator.js",
-                    "path": "resources/extjs-4.1.0/src/menu/"
-                },
-                {
-                    "clsName": "Ext.layout.component.Draw",
-                    "name": "Draw.js",
-                    "path": "resources/extjs-4.1.0/src/layout/component/"
+                    "clsName": "Ext.layout.container.Fit",
+                    "name": "Fit.js",
+                    "path": "resources/extjs-4.1.0/src/layout/container/"
                 },
                 {
                     "clsName": "Ext.ElementLoader",
@@ -830,9 +810,14 @@
                     "path": "resources/extjs-4.1.0/src/"
                 },
                 {
-                    "clsName": "Ext.grid.ColumnLayout",
-                    "name": "ColumnLayout.js",
-                    "path": "resources/extjs-4.1.0/src/grid/"
+                    "clsName": "Ext.menu.Separator",
+                    "name": "Separator.js",
+                    "path": "resources/extjs-4.1.0/src/menu/"
+                },
+                {
+                    "clsName": "Ext.util.Queue",
+                    "name": "Queue.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
                 },
                 {
                     "clsName": "Ext.grid.plugin.HeaderResizer",
@@ -840,9 +825,24 @@
                     "path": "resources/extjs-4.1.0/src/grid/plugin/"
                 },
                 {
+                    "clsName": "Ext.layout.component.Draw",
+                    "name": "Draw.js",
+                    "path": "resources/extjs-4.1.0/src/layout/component/"
+                },
+                {
+                    "clsName": "Ext.grid.ColumnLayout",
+                    "name": "ColumnLayout.js",
+                    "path": "resources/extjs-4.1.0/src/grid/"
+                },
+                {
                     "clsName": "Ext.grid.LockingView",
                     "name": "LockingView.js",
                     "path": "resources/extjs-4.1.0/src/grid/"
+                },
+                {
+                    "clsName": "Ext.draw.CompositeSprite",
+                    "name": "CompositeSprite.js",
+                    "path": "resources/extjs-4.1.0/src/draw/"
                 },
                 {
                     "clsName": "Ext.util.LruCache",
@@ -865,24 +865,14 @@
                     "path": "resources/extjs-4.1.0/src/data/proxy/"
                 },
                 {
-                    "clsName": "Ext.draw.CompositeSprite",
-                    "name": "CompositeSprite.js",
-                    "path": "resources/extjs-4.1.0/src/draw/"
-                },
-                {
-                    "clsName": "Ext.data.proxy.Server",
-                    "name": "Server.js",
-                    "path": "resources/extjs-4.1.0/src/data/proxy/"
+                    "clsName": "Ext.data.writer.Writer",
+                    "name": "Writer.js",
+                    "path": "resources/extjs-4.1.0/src/data/writer/"
                 },
                 {
                     "clsName": "Ext.Ajax",
                     "name": "Ajax.js",
                     "path": "resources/extjs-4.1.0/src/"
-                },
-                {
-                    "clsName": "Ext.data.writer.Writer",
-                    "name": "Writer.js",
-                    "path": "resources/extjs-4.1.0/src/data/writer/"
                 },
                 {
                     "clsName": "Ext.dd.DragZone",
@@ -915,6 +905,11 @@
                     "path": "resources/extjs-4.1.0/src/"
                 },
                 {
+                    "clsName": "Ext.resizer.BorderSplitterTracker",
+                    "name": "BorderSplitterTracker.js",
+                    "path": "resources/extjs-4.1.0/src/resizer/"
+                },
+                {
                     "clsName": "Ext.grid.Lockable",
                     "name": "Lockable.js",
                     "path": "resources/extjs-4.1.0/src/grid/"
@@ -923,16 +918,6 @@
                     "clsName": "Ext.menu.CheckItem",
                     "name": "CheckItem.js",
                     "path": "resources/extjs-4.1.0/src/menu/"
-                },
-                {
-                    "clsName": "Ext.layout.ContextItem",
-                    "name": "ContextItem.js",
-                    "path": "resources/extjs-4.1.0/src/layout/"
-                },
-                {
-                    "clsName": "Ext.layout.Context",
-                    "name": "Context.js",
-                    "path": "resources/extjs-4.1.0/src/layout/"
                 },
                 {
                     "clsName": "Ext.menu.KeyNav",
@@ -955,6 +940,16 @@
                     "path": "resources/extjs-4.1.0/src/draw/"
                 },
                 {
+                    "clsName": "Ext.layout.ContextItem",
+                    "name": "ContextItem.js",
+                    "path": "resources/extjs-4.1.0/src/layout/"
+                },
+                {
+                    "clsName": "Ext.layout.Context",
+                    "name": "Context.js",
+                    "path": "resources/extjs-4.1.0/src/layout/"
+                },
+                {
                     "clsName": "Ext.data.proxy.Client",
                     "name": "Client.js",
                     "path": "resources/extjs-4.1.0/src/data/proxy/"
@@ -975,14 +970,19 @@
                     "path": "resources/extjs-4.1.0/src/data/writer/"
                 },
                 {
-                    "clsName": "Ext.data.proxy.Ajax",
-                    "name": "Ajax.js",
-                    "path": "resources/extjs-4.1.0/src/data/proxy/"
-                },
-                {
                     "clsName": "Ext.grid.header.DragZone",
                     "name": "DragZone.js",
                     "path": "resources/extjs-4.1.0/src/grid/header/"
+                },
+                {
+                    "clsName": "Ext.data.proxy.Server",
+                    "name": "Server.js",
+                    "path": "resources/extjs-4.1.0/src/data/proxy/"
+                },
+                {
+                    "clsName": "Ext.data.proxy.Ajax",
+                    "name": "Ajax.js",
+                    "path": "resources/extjs-4.1.0/src/data/proxy/"
                 },
                 {
                     "clsName": "Ext.data.reader.Reader",
@@ -995,14 +995,14 @@
                     "path": "resources/extjs-4.1.0/src/data/reader/"
                 },
                 {
-                    "clsName": "Ext.data.reader.Array",
-                    "name": "Array.js",
-                    "path": "resources/extjs-4.1.0/src/data/reader/"
-                },
-                {
                     "clsName": "Ext.data.Store",
                     "name": "Store.js",
                     "path": "resources/extjs-4.1.0/src/data/"
+                },
+                {
+                    "clsName": "Ext.data.reader.Array",
+                    "name": "Array.js",
+                    "path": "resources/extjs-4.1.0/src/data/reader/"
                 },
                 {
                     "clsName": "Ext.data.ArrayStore",
@@ -1040,24 +1040,14 @@
                     "path": "resources/extjs-4.1.0/src/resizer/"
                 },
                 {
-                    "clsName": "Ext.data.Batch",
-                    "name": "Batch.js",
-                    "path": "resources/extjs-4.1.0/src/data/"
-                },
-                {
-                    "clsName": "Ext.data.Request",
-                    "name": "Request.js",
-                    "path": "resources/extjs-4.1.0/src/data/"
-                },
-                {
                     "clsName": "Ext.draw.engine.SvgExporter",
                     "name": "SvgExporter.js",
                     "path": "resources/extjs-4.1.0/src/draw/engine/"
                 },
                 {
-                    "clsName": "Ext.util.Grouper",
-                    "name": "Grouper.js",
-                    "path": "resources/extjs-4.1.0/src/util/"
+                    "clsName": "Ext.data.Batch",
+                    "name": "Batch.js",
+                    "path": "resources/extjs-4.1.0/src/data/"
                 },
                 {
                     "clsName": "Ext.draw.engine.ImageExporter",
@@ -1065,14 +1055,24 @@
                     "path": "resources/extjs-4.1.0/src/draw/engine/"
                 },
                 {
-                    "clsName": "Ext.draw.Matrix",
-                    "name": "Matrix.js",
-                    "path": "resources/extjs-4.1.0/src/draw/"
+                    "clsName": "Ext.data.Request",
+                    "name": "Request.js",
+                    "path": "resources/extjs-4.1.0/src/data/"
+                },
+                {
+                    "clsName": "Ext.util.Grouper",
+                    "name": "Grouper.js",
+                    "path": "resources/extjs-4.1.0/src/util/"
                 },
                 {
                     "clsName": "Ext.ShadowPool",
                     "name": "ShadowPool.js",
                     "path": "resources/extjs-4.1.0/src/"
+                },
+                {
+                    "clsName": "Ext.draw.Matrix",
+                    "name": "Matrix.js",
+                    "path": "resources/extjs-4.1.0/src/draw/"
                 },
                 {
                     "clsName": "Ext.grid.ColumnComponentLayout",
@@ -1100,13 +1100,13 @@
                     "path": "resources/extjs-4.1.0/src/draw/"
                 },
                 {
-                    "clsName": "Ext.draw.engine.Svg",
-                    "name": "Svg.js",
+                    "clsName": "Ext.draw.engine.Vml",
+                    "name": "Vml.js",
                     "path": "resources/extjs-4.1.0/src/draw/engine/"
                 },
                 {
-                    "clsName": "Ext.draw.engine.Vml",
-                    "name": "Vml.js",
+                    "clsName": "Ext.draw.engine.Svg",
+                    "name": "Svg.js",
                     "path": "resources/extjs-4.1.0/src/draw/engine/"
                 },
                 {

@@ -306,7 +306,7 @@ Ext.define('Ux.data.WebSocketStore', {
         events.register   && socket.removeAllListeners(events.register);
         events.unregister && socket.removeAllListeners(events.unregister);
         events.batch      && socket.removeAllListeners(events.batch);
-        events.create     && createsocket.removeAllListeners(events.create);
+        events.create     && socket.removeAllListeners(events.create);
         events.read       && socket.removeAllListeners(events.read);
         events.update     && socket.removeAllListeners(events.update);
         events.destroy    && socket.removeAllListeners(events.destroy);
