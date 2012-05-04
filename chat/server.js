@@ -3,19 +3,7 @@ var express = require('express'),
     app     = express.createServer(
         gzip.gzip()
     ),
-    io      = require('socket.io').listen(app),
-    clone   = function(obj, flat) {
-        var newObj = {},
-            key;
-
-        for (key in obj) {
-            if (obj.hasOwnProperty(key)) {
-                newObj[key] = flat || typeof obj[key] !== 'object' ? obj[key] : clone(obj[key]);
-            }
-        }
-
-        return newObj;
-    };
+    io      = require('socket.io').listen(app);
 
 app.configure(function () {
     app.use(express.static(__dirname + '/'));
