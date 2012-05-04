@@ -103,12 +103,18 @@ io.sockets.on('connection', function (socket) {
         });
     });
 
-    socket.on('disconnect', function (reason) {
+    socket.on('typingchange', function(data) {
+        socket.broadcast.emit('typingchange', data);
+    });
+
+    socket.on('disconnect', function () {
         socket.removeAllListeners('login');
         socket.removeAllListeners('create');
         socket.removeAllListeners('create_user');
         socket.removeAllListeners('read_user');
         socket.removeAllListeners('disconnect');
+        socket.removeAllListeners('keep-alive');
+        socket.removeAllListeners('typingchange');
 
         var socks = io.sockets.sockets,
             users = [],

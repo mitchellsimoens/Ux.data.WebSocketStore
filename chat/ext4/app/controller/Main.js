@@ -5,8 +5,27 @@ Ext.define('Chat.controller.Main', {
         {
             ref      : 'viewport',
             selector : 'chat-viewport'
+        },
+        {
+            ref      : 'whoTypingComp',
+            selector : 'component[which=whoTyping]'
         }
     ],
+
+    config : {
+        isTyping     : false,
+        lastType     : false,
+        typingBuffer : 1,
+        whoTyping    : []
+    },
+
+    constructor : function (config) {
+        var me = this;
+
+        me.initConfig(config);
+
+        Chat.controller.Main.superclass.constructor.call(me, config);
+    },
 
     init : function(app) {
         var me = this;
@@ -22,11 +41,48 @@ Ext.define('Chat.controller.Main', {
                 click : me.doSendMessage
             },
             'textfield[name=message]' : {
-                specialkey : me.doSendMessageText
+                specialkey : me.doSendMessageText,
+                keyup      : me.doSendTyping
             }
         });
 
-        app.on('loginsuccess', me.onLoginSuccess, me);
+        app.on({
+            scope              : me,
+            loginsuccess       : me.onLoginSuccess,
+            servertypingchange : me.onTypingChange
+        });
+
+        me.initTypingTimer = Ext.Function.bind(me.initTypingTimer, me);
+
+        me.initTypingTimer();
+    },
+
+    applyLastType : function(date) {
+        if (Ext.isDate(date)) {
+            date = Ext.Date.format(date, 'U');
+        }
+
+        return date;
+    },
+
+    applyWhoTyping : function(names) {
+        return Ext.Array.clone(names);
+    },
+
+    updateWhoTyping : function(names) {
+        var comp = this.getWhoTypingComp ? this.getWhoTypingComp() : false,
+            num  = names.length,
+            text = '';
+
+        if (!comp) {
+            return;
+        }
+
+        if (num > 0) {
+            text = names.join(', ') + (num === 1 ? ' is' : ' are') + ' typing'
+        }
+
+        comp.update(text);
     },
 
     getApplication : function() {
@@ -110,8 +166,64 @@ Ext.define('Chat.controller.Main', {
     },
 
     doSendMessageText : function(field, e) {
-        if (e.keyCode === 13) {
+        if (e.keyCode === 13 && field.getValue().length > 0) {
             this.doSendMessage(field);
         }
+    },
+
+    doSendTyping : function(field, e) {
+        //need more? TODO
+        if (e.keyCode !== 13) {
+            this.setLastType(new Date());
+            this.fireTyping(true);
+            this.setIsTyping(true);
+        }
+    },
+
+    initTypingTimer : function () {
+        var me       = this,
+            isTyping = me.getIsTyping();
+
+        if (isTyping) {
+            var lastType     = me.getLastType(),
+                buffer       = me.getTypingBuffer(),
+                now          = Ext.Date.format(new Date(), 'U'),
+                diff         = now - lastType,
+                stillTyping  = diff <= buffer,
+                typingChange = stillTyping !== isTyping;
+
+            if (typingChange) {
+                me.fireTyping(stillTyping);
+            }
+
+            me.setIsTyping(stillTyping);
+        }
+
+        setTimeout(me.initTypingTimer, 500);
+    },
+
+    fireTyping : function(typing) {
+        var isTyping = this.getIsTyping();
+
+        if (isTyping !== typing) {
+            var app = this.getApplication();
+
+            app.fireEvent('typingchange', app, typing);
+        }
+    },
+
+    onTypingChange : function(name, typing) {
+        var whoTyping = this.getWhoTyping(),
+            index     = Ext.Array.indexOf(whoTyping, name);
+
+        if (typing) {
+            if (index === -1) {
+                whoTyping.push(name);
+            }
+        } else {
+            whoTyping = Ext.Array.remove(whoTyping, name);
+        }
+
+        this.setWhoTyping(whoTyping);
     }
 });
