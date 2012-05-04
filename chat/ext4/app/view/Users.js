@@ -7,7 +7,10 @@ Ext.define('Chat.view.Users', {
         {
             header    : 'Name',
             dataIndex : 'name',
-            flex      : 1
+            flex      : 1,
+            renderer  : function(value, meta, rec) {
+                return value + (rec.get('typing') ? ' typing...' : '');
+            }
         }
     ],
 

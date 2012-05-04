@@ -3,7 +3,8 @@ Ext.define('Chat.model.User', {
 
     config : {
         fields : [
-            'name'
+            'name',
+            'typing'
         ]
     }
 });

@@ -5,10 +5,6 @@ Ext.define('Chat.controller.Main', {
         {
             ref      : 'viewport',
             selector : 'chat-viewport'
-        },
-        {
-            ref      : 'whoTypingComp',
-            selector : 'component[which=whoTyping]'
         }
     ],
 
@@ -25,6 +21,8 @@ Ext.define('Chat.controller.Main', {
         me.initConfig(config);
 
         Chat.controller.Main.superclass.constructor.call(me, config);
+
+        me.initTypingTimer = Ext.Function.bind(me.initTypingTimer, me);
     },
 
     init : function(app) {
@@ -52,8 +50,6 @@ Ext.define('Chat.controller.Main', {
             servertypingchange : me.onTypingChange
         });
 
-        me.initTypingTimer = Ext.Function.bind(me.initTypingTimer, me);
-
         me.initTypingTimer();
     },
 
@@ -70,19 +66,26 @@ Ext.define('Chat.controller.Main', {
     },
 
     updateWhoTyping : function(names) {
-        var comp = this.getWhoTypingComp ? this.getWhoTypingComp() : false,
-            num  = names.length,
-            text = '';
+        var num   = names.length,
+            store = Ext.getStore('Users'),
+            name, index;
 
-        if (!comp) {
+        if (!store) {
             return;
         }
 
-        if (num > 0) {
-            text = names.join(', ') + (num === 1 ? ' is' : ' are') + ' typing'
-        }
+        store.each(function (rec) {
+            if (num === 0) {
+                rec.set('typing', false);
+            } else {
+                name  = rec.get('name');
+                index = Ext.Array.indexOf(names, name);
 
-        comp.update(text);
+                rec.set('typing', index !== -1);
+            }
+
+            rec.commit();
+        });
     },
 
     getApplication : function() {

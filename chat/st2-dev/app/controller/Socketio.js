@@ -6,7 +6,11 @@ Ext.define('Chat.controller.Socketio', {
     },
 
     init : function (app) {
-        app.on('login', 'doLogin', this);
+        app.on({
+            scope        : this,
+            login        : 'doLogin',
+            typingchange : 'doTyping'
+        });
     },
 
     applySocket : function () {
@@ -20,6 +24,10 @@ Ext.define('Chat.controller.Socketio', {
             setInterval(function () {
                 socket.emit('keep-alive', null)
             }, 10000);
+
+            socket.on('typingchange', function (data) {
+                me.getApplication().fireEvent('servertypingchange', data.name, data.typing);
+            });
 
             me.onLogin.call(me, data);
         });
@@ -43,5 +51,14 @@ Ext.define('Chat.controller.Socketio', {
 
             app.fireEvent('loginsuccess', app, data.name, data.socketId);
         }
+    },
+
+    doTyping : function (app, typing) {
+        var socket = this.getSocket();
+
+        socket.emit('typingchange', {
+            name   : app.username,
+            typing : typing
+        });
     }
 });

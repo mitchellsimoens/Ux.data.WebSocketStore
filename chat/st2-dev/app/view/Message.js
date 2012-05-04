@@ -23,7 +23,8 @@ Ext.define('Chat.view.Message', {
                 tap : 'handleButtonTap'
             },
             'textfield' : {
-                action : 'handleTextfieldAction'
+                action : 'handleTextfieldAction',
+                keyup  : 'handleTextfieldKey'
             }
         }
     },
@@ -49,6 +50,12 @@ Ext.define('Chat.view.Message', {
     handleTextfieldAction : function(field, e) {
         if (e.browserEvent.keyCode === 13) {
             this.handleButtonTap();
+        }
+    },
+
+    handleTextfieldKey : function(field, e) {
+        if (e.browserEvent.keyCode !== 13) {
+            this.fireEvent('keyup', this, field, e);
         }
     }
 });

@@ -3,7 +3,7 @@ Ext.define('Chat.view.Users', {
     xtype  : 'chat-users',
 
     config : {
-        itemTpl : '{name}',
+        itemTpl : '{name} {[values.typing ? "typing..." : ""]}',
         store   : 'Users'
     }
 });
