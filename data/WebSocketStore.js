@@ -200,7 +200,7 @@ Ext.define('Ux.data.WebSocketStore', {
      * the socket id from the server.
      */
     applySocketId : function (id) {
-        if (!Ext.isString(id)) {
+        if (!Ext.isString(id) && id !== false) {
             id = Ext.id();
         }
 
@@ -223,6 +223,10 @@ Ext.define('Ux.data.WebSocketStore', {
      * can know what socket the request came from.
      */
     updateSocketId : function(id) {
+        if (!Ext.isString(id)) {
+            return;
+        }
+
         var me            = this,
             extraParams   = me.getExtraParams(),
             socketIdParam = me.getSocketIdParam();
@@ -234,6 +238,10 @@ Ext.define('Ux.data.WebSocketStore', {
         extraParams[socketIdParam] = id;
 
         me.setExtraParams(extraParams);
+
+        if (me.getAutoLoad()) {
+            me.load();
+        }
     },
 
     /**
